@@ -1,0 +1,27 @@
+// Place all the styles related to the invitations controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+form#new_invitation {
+  width: 34em;
+  margin: 10em auto;
+  text-align: center;
+  input[type=text] {
+    border: 0;
+    padding: 0.1em 0.5em;
+    border-radius: 5px;
+    font-size: 1.2em;
+  }
+  input[type=submit] {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0.1em 1em;
+    vertical-align: top;
+    border: 0;
+    border-radius: 5px;
+    color: #222;
+    background-color: silver;
+  }
+  h3 { text-align: center; }
+}
+
