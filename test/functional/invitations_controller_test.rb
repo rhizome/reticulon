@@ -46,8 +46,6 @@ class InvitationsControllerTest < ActionController::TestCase
 
   test "repeat visit to confirmation url should simply redirect" do
     invite = FactoryGirl.create(:invitation, :email => Faker::Internet.email)
-    post :create, :email => invite.email
-    assert_response :redirect
     assert_difference "User.count", +1 do
       get :show, :id => invite.confirmation_token
       assert_response :redirect
